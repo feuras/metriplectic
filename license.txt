@@ -1,0 +1,55 @@
+Copyright (c) J R Dunkley
+
+All Rights Reserved
+
+Definitions
+
+"Software" refers to all files, source code, scripts, and documentation in this repository.
+
+"Licensor" refers to [Your Full Name or Institution], the copyright holder of the Software.
+
+"You" (or "Your") refers to any individual or entity who downloads, views, or uses the Software.
+
+"Academic Use" refers to using the Software for the sole purpose of non-profit education, teaching, or academic research, as part of a degree-granting academic institution.
+
+"Commercial Use" refers to any use of the Software for a purpose that, directly or indirectly, generates revenue or other commercial advantage. This includes, but is not limited to, using the Software in a commercial product or service, providing services based on the Software, or using the Software for commercial research and development.
+
+License Grant
+
+The Licensor hereby grants You a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to:
+
+View the Software's source code.
+
+Download and execute the Software for non-commercial, personal, or Academic Use only.
+
+Restrictions
+
+This license is subject to the following strict restrictions. You may not, under any circumstances, without explicit prior written permission from the Licensor:
+
+Engage in any Commercial Use of the Software.
+
+Modify, adapt, or create derivative works based on the Software.
+
+Distribute, copy, republish, sublicense, sell, rent, or lease the Software or any part thereof.
+
+Remove or alter any copyright notices, trademarks, or other proprietary markings in the Software.
+
+Use the Software for any purpose that is unlawful or otherwise prohibited by this license.
+
+All rights not expressly granted to You in this license are reserved by the Licensor.
+
+Attribution
+
+If You use the Software for Academic Use, You must provide appropriate attribution to the Licensor in any resulting publications, presentations, or reports. A citation to the Software's repository is the preferred method:
+
+[Your Name/Institution]. ([Year]). [Repository Name] (Version [Version Number]) [Software]. GitHub. https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories
+
+Please replace the bracketed information as appropriate.
+
+No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+Limitation of Liability
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
