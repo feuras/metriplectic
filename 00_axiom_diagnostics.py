@@ -1,4 +1,4 @@
-# Metriplectic Axiom Diagnostics — Fortress edition (console only)
+# Metriplectic Axiom Diagnostics - Fortress edition (console only)
 # ----------------------------------------------------------------
 # This version enforces a consistent 2/3 spectral projection P on ALL nonlinear ops
 # and computes Pirr with the projected gradient. It also normalises commutator dials.
@@ -40,7 +40,8 @@ def gaussian_smooth_1d(f, k, sigma):
     return np.fft.ifft(np.exp(-0.5*(sigma**2)*(k**2))*np.fft.fft(f)).real
 
 def trapezoid_1d(f, L):
-    return np.trapezoid(f, dx=L/len(f))
+    # numpy uses trapz
+    return np.trapz(f, dx=L/len(f))
 
 def mass_from_k0_1d(v, L):
     v0 = np.fft.fft(v)[0].real
@@ -64,7 +65,8 @@ def div_flux_2d(jx, jy, kx, ky):
 
 def trapezoid_2d(f, Lx, Ly):
     dx = Lx/f.shape[0]; dy = Ly/f.shape[1]
-    return np.trapezoid(np.trapezoid(f, dx=dy, axis=1), dx=dx, axis=0)
+    # integrate over y then x
+    return np.trapz(np.trapz(f, dx=dy, axis=1), dx=dx, axis=0)
 
 # =========================
 # 2/3-rule projection and projected products
@@ -159,7 +161,8 @@ def nonlocal_falsifier_sweep_1d(N, L, sigmas):
         # Construct a nonlocal control by smoothing ∂x μ before projecting
         mux_s = gaussian_smooth_1d(mux, k, sigma)
         mux_s = P2_3_1d(mux_s)
-        j_nonlocal = prodP(rho, G*mux_s)
+        # consistent projected product for nonlocal falsifier
+        j_nonlocal = prodP(rho, prodP(G, mux_s))
         v = div_flux_1d(j_nonlocal, k)
         v = P2_3_1d(v)
         inner = trapezoid_1d(v*mu, L)
@@ -302,4 +305,5 @@ def run_all():
     print("\n=== Done. Pass criteria: equality gaps ~ O(dx), mass k0 ~ 0, PR ~ 0, relative commutator ~ O(ell^2), cond(B) < 1e3. ===")
 
 # Execute
-run_all()
+if __name__ == "__main__":
+    run_all()
